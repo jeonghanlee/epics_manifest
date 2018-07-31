@@ -22,7 +22,7 @@
   </project>
 
   <!-- Base --> 
-  <project path="epics-base"                    name="base"         revision="refs/tags/R7.0.1.1"   group="base"  remote="base"  />
+  <project path="epics-base"                    name="epics-base"         revision="refs/tags/R7.0.1.1"   group="base"  remote="base"  />
  
   <!-- Common Modules --> 
   <project path="epics-modules/00.iocStats"     name="iocStats"     revision="1856ef56b784d61951d02bbd364b2c9ff7857c36"  group="common" />
@@ -35,7 +35,7 @@
   <project path="epics-modules/06.std"          name="std"          revision="refs/tags/R3-5"     group="common" />
   <project path="epics-modules/07.ip"           name="ip"           revision="refs/tags/R2-19-1"  group="common" />
   <project path="epics-modules/08.calc"         name="calc"         revision="refs/tags/R3-7-1"   group="common" />
-  <project path="epics-modules/09.stream"       name="stream"       revision="refs/tags/R2-7-7b"  group="common" />
+<!--  <project path="epics-modules/09.stream"       name="stream"       revision="refs/tags/R2-7-7b"  group="common" /> -->
  
   <project path="epics-modules/10.devlib2"      name="devlib2"      revision="refs/tags/2.9"      group="timing" />
   <project path="epics-modules/11.mrfioc2"      name="mrfioc2"      revision="refs/tags/2.2.0"    group="timing" />
