@@ -17,10 +17,10 @@
   <default revision="master"
            remote="modules"
            sync-j="4" />
-
-  <project path="builder" name="epics-builder" remote="han" >
+  <project path="builder" name="epics_builder" remote="han" >
   </project>
 
+  
   <!-- Base --> 
   <project path="epics-base"                    name="epics-base"         revision="refs/tags/R7.0.1.1"   group="base"  remote="base"  />
  
