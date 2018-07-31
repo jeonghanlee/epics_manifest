@@ -10,7 +10,8 @@
 	   fetch="https://github.com/epics-extensions/"/>
   <remote  name="bessy"
 	   fetch="http://www-csr.bessy.de/control/SoftDist/sequencer/repo/" />
-  
+  <remote  name="ess"
+	   fetch="https://github.com/icshwi/"/>
   <remote  name="han"
            fetch="https://github.com/jeonghanlee/"/>
   
@@ -30,9 +31,7 @@
   <project path="epics-modules/02.asyn"         name="asyn"         revision="refs/tags/R4-33"    group="common" />
   <project path="epics-modules/03.busy"         name="busy"         revision="refs/tags/R1-7"     group="common" />
   <project path="epics-modules/04.modbus"       name="modbus"       revision="refs/tags/R2-11"    group="common" />
-  <!--
-      <project path="epics-modules/05.seq"          name="branch-2-2.git"   revision="refs/tags/R2-2-6"   group="common" remote="bessy" />
-      -->
+  <project path="epics-modules/05.seq"          name="sequencer-2-2"   revision="refs/tags/R2-2-6"   group="common" remote="ess" />
   <project path="epics-modules/05.sscan"        name="sscan"        revision="refs/tags/R2-11-1"  group="common" />
   <project path="epics-modules/06.std"          name="std"          revision="refs/tags/R3-5"     group="common" />
   <project path="epics-modules/07.ip"           name="ip"           revision="refs/tags/R2-19-1"  group="common" />
