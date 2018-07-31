@@ -1,5 +1,6 @@
 # epics_manifest
 
+This repository works with epics_builder [1].
 
 ## Repo
 
@@ -40,3 +41,15 @@ repo sync --no-clone-bundle
 ```
 repo sync --force-sync --no-clone-bundle
 ```
+
+
+## epics_builder
+
+```
+$ make init
+$ make base
+$ make modules
+```
+
+## References
+[1] https://github.com/jeonghanlee/epics_builder
