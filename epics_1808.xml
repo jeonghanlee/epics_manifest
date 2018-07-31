@@ -41,8 +41,8 @@
   <project path="epics-modules/calc"         name="calc"         revision="refs/tags/R3-7-1"   group="common" />
   <project path="epics-modules/stream"       name="stream"       revision="refs/tags/R2-7-7b"  group="common" /> 
   <project path="epics-modules/motor"        name="motor"        revision="refs/tags/R6-10-1"  group="common" />
-  <project path="epics-modules/devlib2"      name="devlib2"      revision="refs/tags/2.9"      group="timing" />
-  <project path="epics-modules/mrfioc2"      name="mrfioc2"      revision="refs/tags/2.2.0"    group="timing" />
+  <project path="epics-modules/devlib2"      name="devlib2"      revision="8a2bd9ae84f4d8340cd32fa44cd7585a9c69809f"      group="timing" />
+  <project path="epics-modules/mrfioc2"      name="mrfioc2"      revision="3bafa99dccf2d11d719b1a15a7c66be205966bc2"    group="timing" />
 
   <project path="areaDetector"                  name="areaDetector" revision="refs/tags/R3-3-2"   group="areaDetector" remote="areaDetector" />
   
