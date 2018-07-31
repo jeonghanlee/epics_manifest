@@ -30,12 +30,14 @@
   <project path="epics-modules/02.asyn"         name="asyn"         revision="refs/tags/R4-33"    group="common" />
   <project path="epics-modules/03.busy"         name="busy"         revision="refs/tags/R1-7"     group="common" />
   <project path="epics-modules/04.modbus"       name="modbus"       revision="refs/tags/R2-11"    group="common" />
-  <project path="epics-modules/05.seq"          name="branch-2-2.git"   revision="refs/tags/R2-2-6"   group="common" remote="bessy" />
+  <!--
+      <project path="epics-modules/05.seq"          name="branch-2-2.git"   revision="refs/tags/R2-2-6"   group="common" remote="bessy" />
+      -->
   <project path="epics-modules/05.sscan"        name="sscan"        revision="refs/tags/R2-11-1"  group="common" />
   <project path="epics-modules/06.std"          name="std"          revision="refs/tags/R3-5"     group="common" />
   <project path="epics-modules/07.ip"           name="ip"           revision="refs/tags/R2-19-1"  group="common" />
   <project path="epics-modules/08.calc"         name="calc"         revision="refs/tags/R3-7-1"   group="common" />
-<!--  <project path="epics-modules/09.stream"       name="stream"       revision="refs/tags/R2-7-7b"  group="common" /> -->
+  <project path="epics-modules/09.stream"       name="stream"       revision="refs/tags/R2-7-7b"  group="common" /> 
  
   <project path="epics-modules/10.devlib2"      name="devlib2"      revision="refs/tags/2.9"      group="timing" />
   <project path="epics-modules/11.mrfioc2"      name="mrfioc2"      revision="refs/tags/2.2.0"    group="timing" />
