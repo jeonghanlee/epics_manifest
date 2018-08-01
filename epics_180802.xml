@@ -48,7 +48,7 @@
   <project path="epics-modules/mrfioc2"      name="mrfioc2"      revision="3bafa99dccf2d11d719b1a15a7c66be205966bc2"    group="timing" />
 
   <!-- Extra Modules -->
-  <project path="epics-modules/snmp"         name="snmp"         revision="refs/tags/1.0.0.2"    group="extra" />
+  <project path="epics-modules/snmp"         name="snmp"         revision="refs/tags/1.0.0.2"  remote="han"    group="extra" />
 
   <project path="areaDetector"                  name="areaDetector" revision="refs/tags/R3-3-2"   group="areaDetector" remote="areaDetector" />
   
