@@ -1,6 +1,6 @@
 # epics_manifest
 
-This repository works with epics_builder [1].
+EPICS manifest repository works with epics_builder [1].
 
 ## Repo
 
@@ -46,9 +46,12 @@ repo sync --force-sync --no-clone-bundle
 ## epics_builder
 
 ```
+$ bash pkg.bash
 $ make init
 $ make base
 $ make modules
+$ source setEpicsEnv.bash
+
 ```
 
 ## References
