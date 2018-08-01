@@ -3,6 +3,7 @@
 EPICS manifest repository works with epics_builder [1] and Repo [2].
 
 
+
 ## Preparation
 
 One needs to setup Repo as follows:
@@ -55,11 +56,22 @@ epics_env $ source setEpicsEnv.bash
 ```
 
 
+## EPICS Extensions 
+
+One can install the additional EPICS extensions such as medm and Striptool with epics_180802.xml manifest. Please see the Additional commands. 
+
+```
+epics_env $ make init-exts
+epics_env $ make exts
+```
+Step 5 in the above Procedure, also has the extension path.
+
+
 ## Additional commands
 
-* Initialize epics_env to use the epics_1808.xml, on the master branch
+* Initialize epics_env to use the epics_180802.xml, on the master branch
 ```
-repo init -u https://github.com/jeonghanlee/epics_manifest.git -m epics_1808.xml
+repo init -u https://github.com/jeonghanlee/epics_manifest.git -m epics_180802.xml
 ```
 
 * Force Sync
@@ -69,8 +81,8 @@ repo sync --force-sync --no-clone-bundle
 
 ## References and comments
 
-[1] https://github.com/jeonghanlee/epics_manifest
+[1] https://github.com/jeonghanlee/epics_manifest   
+[2] https://gerrit.googlesource.com/git-repo/    
+[3] default.xml is the symbolic link to epics_1808.xml   
 
-[2] https://gerrit.googlesource.com/git-repo/
 
-[3] default.xml is the symbolic link to epics_1808.xml
