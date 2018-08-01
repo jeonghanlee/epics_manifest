@@ -26,8 +26,11 @@
 
   
   <!-- Base --> 
-  <project path="epics-base"                    name="epics-base"         revision="refs/tags/R7.0.1.1"   group="base"  remote="base"  />
- 
+  <project path="epics-base"     name="epics-base"    revision="refs/tags/R7.0.1.1"   group="base"  remote="base"  />
+
+  <!-- Extensions -->
+  <project path="extensions"     name="extensions"    revision="226c87953ebba1cc9aa7a4db09b236630001072a"   group="extensions"  remote="han"  />
+  
   <!-- Common Modules --> 
   <project path="epics-modules/iocStats"     name="iocStats"     revision="1856ef56b784d61951d02bbd364b2c9ff7857c36"  group="common" />
   <project path="epics-modules/ipac"         name="ipac"         revision="refs/tags/2.15"     group="common" />
@@ -50,6 +53,8 @@
   <!-- Extra Modules -->
   <project path="epics-modules/snmp"         name="snmp"         revision="refs/tags/1.0.0.2"  remote="han"    group="extra" />
 
+
+  
   <project path="areaDetector"                  name="areaDetector" revision="refs/tags/R3-3-2"   group="areaDetector" remote="areaDetector" />
   
   <!-- Required Packages --> 
