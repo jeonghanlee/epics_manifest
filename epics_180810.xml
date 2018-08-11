@@ -18,7 +18,7 @@
   <default revision="master"
            remote="modules"
            sync-j="4" />
-  <project path="builder" name="epics_builder" remote="han" >
+  <project path="builder" name="epics_builder" revision="refs/tags/1.1.1"  remote="han" >
     <linkfile src="Makefile" dest="Makefile"/>
     <linkfile src="modules.Makefile" dest="epics-modules/Makefile"/>
     <linkfile src="tools/setEpicsEnv.bash" dest="setEpicsEnv.bash"/>
@@ -29,7 +29,7 @@
   <project path="epics-base"     name="epics-base"    revision="refs/tags/R7.0.1.1"   group="base"  remote="base"  />
 
   <!-- Extensions -->
-  <project path="extensions"     name="extensions"    group="extensions"  remote="han"  />
+  <project path="extensions"     name="extensions"    group="extensions"  revision="01ed8862f0adf4b539caecade31fec8010e4821f" remote="han"  />
   
   <!-- Common Modules --> 
   <project path="epics-modules/iocStats"     name="iocStats"        revision="1856ef56b784d61951d02bbd364b2c9ff7857c36"  group="common" />
