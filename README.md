@@ -3,7 +3,6 @@
 EPICS manifest repository works with epics_builder [1] and Repo [2].
 
 
-
 ## Preparation
 
 One needs to setup Repo as follows:
@@ -67,11 +66,46 @@ epics_env $ make exts
 Step 5 in the above Procedure, also has the extension path.
 
 
+## AreaDetector
+
+One can also install few predefined and selected Area Detector and its Plugin. Note that it will clone all plugin in a local directory even if few selected one will be installed. 
+
+```
+ADCore
+ADSupport
+ADSIMDETECTOR
+ADCSIMDETECTOR
+ADPOINTGREY
+ADANDOR
+ADANDOR3
+ADPROSILICA
+NDDRIVERSTDARRAYS
+PVADRIVER
+ADURL
+```
+And it also enable the following epics modules as:
+
+```
+ASYN
+AUTOSAVE
+BUSY
+CALC
+SNCSEQ
+DEVIOCSTATS
+SSCAN
+```
+
+```
+epics_env $ make init-ad
+epics_env $ make ad
+```
+
+
 ## Additional commands
 
-* Initialize epics_env to use the epics_180802.xml, on the master branch
+* Initialize epics_env to use the epics_180811.xml, on the master branch
 ```
-repo init -u https://github.com/jeonghanlee/epics_manifest.git -m epics_180802.xml
+repo init -u https://github.com/jeonghanlee/epics_manifest.git -m epics_180811.xml
 ```
 
 * Force Sync
@@ -84,5 +118,4 @@ repo sync --force-sync --no-clone-bundle
 [1] https://github.com/jeonghanlee/epics_manifest   
 [2] https://gerrit.googlesource.com/git-repo/    
 [3] default.xml is the symbolic link to epics_1808.xml   
-
 
