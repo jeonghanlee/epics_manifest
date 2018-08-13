@@ -25,7 +25,7 @@
     <linkfile src="Makefile" dest="Makefile"/>
     <linkfile src="modules.Makefile" dest="epics-modules/Makefile"/>
     <linkfile src="tools/setEpicsEnv.bash" dest="setEpicsEnv.bash"/>
-    <linkfile src="tools/setupVDCT.bash"   dest="setupVDCT.bash"/>
+    <linkfile src="tools/setupVDCT.bash"   dest="installVisualDCT"/>
   </project>
   
   <!-- Base --> 

@@ -57,7 +57,7 @@ epics_env $ source setEpicsEnv.bash
 
 ## EPICS Extensions 
 
-One can install the additional EPICS extensions such as medm and Striptool with epics_180802.xml manifest. Please see the Additional commands. 
+One can install the additional EPICS extensions such as medm and Striptool from epics_180802.xml manifest. Please see the Additional commands. 
 
 ```
 epics_env $ make init-exts
@@ -100,6 +100,28 @@ epics_env $ make init-ad
 epics_env $ make ad
 ```
 
+## VisualDCT
+
+One can install VisualDCT in EPICS_EXTENSIONS. If one would like to do, please run ```installVisualDCT```.
+
+
+## Platform Path
+In the directory, one can find the following additional tools which allow users to install few more enviornment or libraries. For further information, please look at corresponding url
+
+### ethercat
+https://github.com/icshwi/etherlabmaster
+
+### lmfit
+https://github.com/jeonghanlee/lmfit-env
+
+### opencv
+https://github.com/jeonghanlee/opencv-env
+
+### nioc
+https://github.com/jeonghanlee/epics_NIOCs
+
+
+
 
 ## Additional commands
 
@@ -117,5 +139,5 @@ repo sync --force-sync --no-clone-bundle
 
 [1] https://github.com/jeonghanlee/epics_builder  
 [2] https://gerrit.googlesource.com/git-repo/    
-[3] default.xml is the symbolic link to epics_180811.xml   
+[3] default.xml is the symbolic link to epics_180813.xml   
 
