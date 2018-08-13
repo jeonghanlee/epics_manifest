@@ -109,16 +109,16 @@ One can install VisualDCT in EPICS_EXTENSIONS. If one would like to do, please r
 In the directory, one can find the following additional tools which allow users to install few more enviornment or libraries. For further information, please look at corresponding url
 
 ### ethercat
-https://github.com/icshwi/etherlabmaster
+* https://github.com/icshwi/etherlabmaster
 
 ### lmfit
-https://github.com/jeonghanlee/lmfit-env
+* https://github.com/jeonghanlee/lmfit-env
 
 ### opencv
-https://github.com/jeonghanlee/opencv-env
+* https://github.com/jeonghanlee/opencv-env
 
 ### nioc
-https://github.com/jeonghanlee/epics_NIOCs
+* https://github.com/jeonghanlee/epics_NIOCs
 
 
 
