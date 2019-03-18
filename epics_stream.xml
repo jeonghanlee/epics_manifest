@@ -11,7 +11,7 @@
            remote="modules"
            sync-j="1" />
   
-  <project path="builder" name="epics_builder"  remote="han" >
+  <project path="builder" name="epics_builder"  revision="87f75d52c593129bfa8669d0b0f215de7f97a778" remote="han" >
     <linkfile src="Makefile" dest="Makefile"/>
     <linkfile src="modules.Makefile" dest="epics-modules/Makefile"/>
     <linkfile src="tools/setEpicsEnv.bash" dest="setEpicsEnv.bash"/>
