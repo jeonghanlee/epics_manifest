@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <remote name="base"
+          fetch="https://github.com/epics-base/"/>
+  <remote name="modules"
+	        fetch="https://github.com/epics-modules/"/>
+  <remote name="han"
+          fetch="https://github.com/jeonghanlee/"/>
+
+  <default revision="master"
+           remote="modules"
+           sync-j="1" />
+  
+  <project path="builder" name="epics_builder"  remote="han" >
+    <linkfile src="Makefile" dest="Makefile"/>
+    <linkfile src="modules.Makefile" dest="epics-modules/Makefile"/>
+    <linkfile src="tools/setEpicsEnv.bash" dest="setEpicsEnv.bash"/>
+  </project>
+  
+  <!-- Base --> 
+  <project path="epics-base"     name="epics-base"    revision="refs/tags/R3.15.6"   group="base"  remote="base"  />
+
+  <!-- Common Modules --> 
+  <project path="epics-modules/iocStats"     name="iocStats"        revision="ae5d08388ca3d6c48ec0e37787c865c5db18dc8f"  group="common" />
+  <project path="epics-modules/autosave"     name="autosave"        revision="refs/tags/R5-9"     group="common" />
+  <project path="epics-modules/asyn"         name="asyn"            revision="refs/tags/R4-33"    group="common" />
+  <project path="epics-modules/calc"         name="calc"            revision="refs/tags/R3-7-1"   group="common" />
+  <project path="epics-modules/stream"       name="stream"          revision="refs/tags/R2-7-7b"  group="common" /> 
+
+  <!-- Required Packages --> 
+  <project path="platform/pkgs"     name="pkg_automation" remote="han"  group="pkg" >
+    <linkfile src="pkg_automation.bash" dest="pkg.bash"/>
+  </project>
+  <project path="platform/niocs"    name="epics_NIOCs"    remote="han"  group="pkg" />
+
+</manifest>
