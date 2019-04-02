@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <remote name="base"
+          fetch="https://github.com/epics-base/"/>
+  <remote name="modules"
+	        fetch="https://github.com/epics-modules/"/>
+  <remote name="areaDetector"
+	        fetch="https://github.com/areaDetector/"/>
+  <remote name="extensions"
+	        fetch="https://github.com/epics-extensions/"/>
+  <remote name="bessy"
+	        fetch="http://www-csr.bessy.de/control/SoftDist/sequencer/repo/" />
+  <remote name="ess"
+	        fetch="https://github.com/icshwi/"/>
+  <remote name="han"
+          fetch="https://github.com/jeonghanlee/"/>
+  <remote name="ChannelFinder"
+          fetch="https://github.com/ChannelFinder/"/>
+
+  <default revision="master"
+           remote="modules"
+           sync-j="1" />
+  
+  <project path="builder" name="epics_builder"  remote="han" >
+    <linkfile src="Makefile" dest="Makefile"/>
+    <linkfile src="modules.Makefile" dest="epics-modules/Makefile"/>
+    <linkfile src="tools/setEpicsEnv.bash" dest="setEpicsEnv.bash"/>
+    <linkfile src="tools/setupVDCT.bash"   dest="installVisualDCT"/>
+  </project>
+  
+  <!-- Base --> 
+  <project path="epics-base"     name="epics-base"    revision="refs/tags/R7.0.2.1"   group="base"  remote="base"  />
+
+  <!-- Extensions -->
+  <project path="extensions"     name="extensions"    revision="01ed8862f0adf4b539caecade31fec8010e4821f" group="extensions" remote="han"  />
+
+  <!-- Common Modules --> 
+  <project path="epics-modules/iocStats"     name="iocStats"        revision="ae5d08388ca3d6c48ec0e37787c865c5db18dc8f"  group="common" />
+  <project path="epics-modules/ipac"         name="ipac"            revision="refs/tags/2.15"     group="common" />
+  <project path="epics-modules/autosave"     name="autosave"        revision="refs/tags/R5-9"     group="common" />
+  <project path="epics-modules/asyn"         name="asyn"            revision="refs/tags/R4-33"    group="common" />
+  <project path="epics-modules/asyn-usbtmc"  name="asyn"            revision="refs/tags/R4-33"    group="common" />
+  <project path="epics-modules/busy"         name="busy"            revision="refs/tags/R1-7"     group="common" />
+  <project path="epics-modules/modbus"       name="modbus"          revision="refs/tags/R2-11"    group="common" />
+  <project path="epics-modules/seq"          name="sequencer-2-2"   revision="refs/tags/R2-2-6"   group="common" remote="ess" />
+  <project path="epics-modules/sscan"        name="sscan"           revision="refs/tags/R2-11-1"  group="common" />
+  <project path="epics-modules/std"          name="std"             revision="refs/tags/R3-5"     group="common" />
+  <project path="epics-modules/ip"           name="ip"              revision="refs/tags/R2-19-1"  group="common" />
+  <project path="epics-modules/calc"         name="calc"            revision="refs/tags/R3-7-1"   group="common" />
+  <project path="epics-modules/stream"       name="stream"          revision="refs/tags/R2-7-7b"  group="common" /> 
+  <project path="epics-modules/motor"        name="motor"           revision="refs/tags/R6-10-1"  group="common" />
+
+  <!-- Timing -->
+  <project path="epics-modules/devlib2"      name="devlib2"      revision="8a2bd9ae84f4d8340cd32fa44cd7585a9c69809f"   group="timing" />
+  <project path="epics-modules/mrfioc2"      name="mrfioc2"      revision="3bafa99dccf2d11d719b1a15a7c66be205966bc2"   group="timing" />
+
+  <!-- Extra Modules -->
+  <project path="epics-modules/snmp"         name="snmp"         revision="refs/tags/1.0.0.2"  group="extra"        remote="han" />
+
+  <!-- Area Detector -->
+  <project path="areaDetector"               name="areaDetector" revision="refs/tags/R3-3-2"   group="areaDetector" remote="areaDetector" />
+
+  <!-- Required Packages --> 
+  <project path="platform/pkgs"     name="pkg_automation" remote="han"  group="pkg" >
+    <linkfile src="pkg_automation.bash" dest="pkg.bash"/>
+  </project>
+  <project path="platform/opencv"   name="opencv-env"     remote="han"  group="pkg" />
+  <project path="platform/lmfit"    name="lmfit-env"      remote="han"  group="pkg" />
+  <project path="platform/ethercat" name="etherlabmaster" remote="ess"  group="pkg" />
+  <project path="platform/niocs"    name="epics_NIOCs"    remote="han"  group="pkg" />
+
+</manifest>
