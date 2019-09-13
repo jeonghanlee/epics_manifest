@@ -29,7 +29,7 @@
   </project>
   
   <!-- Base --> 
-  <project path="epics-base"     name="epics-base"    revision="refs/tags/R7.0.3"   group="base"  remote="base"  />
+  <project path="epics-base"     name="epics-base"    revision="d58996992de2699354a4a61dc2acb7126476392c"   group="base"  remote="base"  />
 
   <!-- Extensions -->
   <project path="extensions"     name="extensions"    revision="01ed8862f0adf4b539caecade31fec8010e4821f" group="extensions" remote="han"  />
