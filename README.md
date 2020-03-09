@@ -1,4 +1,7 @@
-# epics_manifest
+epics_manifest
+===
+
+![EPICS building](https://github.com/jeonghanlee/epics_manifest/workflows/EPICS%20building/badge.svg)
 
 EPICS manifest repository works with epics_builder [1] and Repo [2].
 
