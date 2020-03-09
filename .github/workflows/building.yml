@@ -30,5 +30,3 @@ jobs:
         make init
         make base
         make modules
-        make init-exts
-        make exts
