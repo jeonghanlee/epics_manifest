@@ -42,7 +42,7 @@
   <project path="epics-modules/autosave"     name="autosave"        revision="refs/tags/R5-10"    group="common" />
   <project path="epics-modules/asyn"         name="asyn"            revision="refs/tags/R4-36"    group="common" />
   <project path="epics-modules/asyn-usbtmc"  name="asyn"            revision="refs/tags/R4-36"    group="common" />
-  <project path="epics-modules/lua           name="lua"             revision="5d8955268d9f779c0cdfea2e0ca7bb45494cf25f" group="common" />
+  <project path="epics-modules/lua"          name="lua"             revision="5d8955268d9f779c0cdfea2e0ca7bb45494cf25f" group="common" />
   <project path="epics-modules/busy"         name="busy"            revision="refs/tags/R1-7-2"   group="common" />
   <project path="epics-modules/modbus"       name="modbus"          revision="refs/tags/R3-0"     group="common" />
   <project path="epics-modules/seq"          name="sequencer-2-2"   revision="refs/tags/R2-2-6"   group="common" remote="ess" />
