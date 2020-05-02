@@ -4,7 +4,7 @@
   <remote name="modules"        fetch="https://github.com/epics-modules/" />
   <remote name="areaDetector"   fetch="https://github.com/areaDetector/"/>
   <remote name="extensions"     fetch="https://github.com/epics-extensions/" />
-  <remote name="bessy"          fetch="http://www-csr.bessy.de/control/SoftDist/sequencer/repo/" />
+  <!-- <remote name="bessy"          fetch="http://www-csr.bessy.de/control/SoftDist/sequencer/repo/" /> -->
   <remote name="psi"            fetch="http://github.com/paulscherrerinstitute/" />
   <remote name="han"            fetch="https://github.com/jeonghanlee/" />
   <remote name="ChannelFinder"  fetch="https://github.com/ChannelFinder/" />
@@ -30,7 +30,7 @@
   <project path="epics-modules/busy"         name="busy"            revision="refs/tags/R1-7-2"                          group="common" />
   <project path="epics-modules/lua"          name="lua"             revision="5d8955268d9f779c0cdfea2e0ca7bb45494cf25f"  group="common" />
   <project path="epics-modules/modbus"       name="modbus"          revision="b6598690936ec74cf9dd2103a31d7d6d997c24bd"  group="common" />
-  <project path="epics-modules/seq"          name="branch-2-2"      revision="refs/tags/R2-2-8"                          group="common"       remote="bessy" />
+  <project path="epics-modules/seq"          name="sequencer-2-2"   revision="refs/tags/R2-2-8"                          group="common"       remote="han" />
   <project path="epics-modules/sscan"        name="sscan"           revision="4cf1a2306402d3a88921389292ce4ce1db4a614d"  group="common" />
   <project path="epics-modules/std"          name="std"             revision="refs/tags/R3-6-1"                          group="common" />
   <project path="epics-modules/ip"           name="ip"              revision="fdbbb378d48df7b08961b88437ff33cee5f5400a"  group="common" />
