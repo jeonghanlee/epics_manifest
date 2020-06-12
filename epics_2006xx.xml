@@ -44,7 +44,7 @@
   <project path="epics-modules/devlib2"      name="devlib2"         revision="refs/tags/2.11"                            group="timing" />
   <project path="epics-modules/mrfioc2"      name="mrfioc2"         revision="refs/tags/2.3.0"                           group="timing" />
   <!-- Extra Modules -->
-  <project path="epics-modules/snmp"         name="snmp"            revision="bee4e7abd7debb43a2b4b8d6292440671cfaa879"  group="extra"        remote="han"   />
+  <project path="epics-modules/snmp"         name="snmp"            revision="04e07780b7b3227687d6fcf1ec61dbc026595096"  group="extra"        remote="han"   />
   <project path="epics-modules/retools"      name="retools"         revision="refs/tags/R1-4-1"                          group="extra"        remote="bruno" />
   <!-- Area Detector -->
   <project path="areaDetector"               name="areaDetector"    revision="refs/tags/R3-7"                            group="areaDetector" remote="areaDetector" />
