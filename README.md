@@ -1,5 +1,6 @@
 epics_manifest
 ===
+Please use the new developing env https://github.com/jeonghanlee/EPICS-env
 
 ![EPICS building](https://github.com/jeonghanlee/epics_manifest/workflows/EPICS%20building/badge.svg)
 
